@@ -52,24 +52,24 @@ export default function About() {
               Billionaires Luxury Salon was born from a passion to bring world-class beauty experiences to our discerning clients. We believe every person deserves to feel like royalty, and we deliver nothing less than perfection.
             </p>
 
-            <p className={`section-subtitle ${inView ? 'animate-fade-up delay-300' : 'opacity-0'}`}>
+            <p className={`section-subtitle hidden md:block ${inView ? 'animate-fade-up delay-300' : 'opacity-0'}`}>
               From precision hair artistry to transformative bridal makeovers, our certified professionals use only the finest premium international products to craft your perfect look with meticulous care, creativity, and absolute hygiene.
             </p>
 
             {/* Premium Features List */}
-            <div className={`flex flex-col gap-5 mt-4 w-full ${inView ? 'animate-fade-up delay-400' : 'opacity-0'}`}>
+            <div className={`flex flex-col gap-4 md:gap-5 mt-2 md:mt-4 w-full ${inView ? 'animate-fade-up delay-400' : 'opacity-0'}`}>
               {[
                 { title: 'Certified Professionals', desc: 'Expert stylists with international training.' },
                 { title: 'Premium Products', desc: 'Only the finest luxury beauty brands used.' },
                 { title: 'Hygienic Environment', desc: 'Strict sanitization for your absolute safety.' },
               ].map((f, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="mt-1 text-[#FF4D9D] shrink-0">
-                    <CheckCircle2 size={24} />
+                <div key={i} className="flex items-center md:items-start gap-3 md:gap-4">
+                  <div className="md:mt-1 text-[#FF4D9D] shrink-0">
+                    <CheckCircle2 size={22} strokeWidth={2} />
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold text-lg mb-1">{f.title}</h4>
-                    <p className="text-white/60 text-sm">{f.desc}</p>
+                    <h4 className="text-white font-semibold text-[15px] md:text-lg mb-0 md:mb-1">{f.title}</h4>
+                    <p className="text-white/60 text-sm hidden md:block">{f.desc}</p>
                   </div>
                 </div>
               ))}
