@@ -75,11 +75,11 @@ export default function Services() {
         </div>
 
         {/* Compact Services Grid with Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {serviceCategories.map((cat, i) => (
             <div
               key={cat.id}
-              className={`relative flex flex-col h-full min-h-[540px] w-full rounded-[24px] bg-[#0d0d0d] border border-white/5 overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(255,77,157,0.12)] hover:border-[#FF4D9D]/30 ${inView ? 'animate-fade-up' : 'opacity-0'}`}
+              className={`relative flex flex-col h-full min-h-[380px] md:min-h-[420px] w-full rounded-[24px] bg-[#0d0d0d] border border-white/5 overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(255,77,157,0.12)] hover:border-[#FF4D9D]/30 ${inView ? 'animate-fade-up' : 'opacity-0'}`}
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               {/* Background Image */}
@@ -119,15 +119,16 @@ export default function Services() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-white/80 text-[13.5px] leading-relaxed">
+                  <p className="text-white/80 text-[14px] leading-relaxed mb-1">
                     {cat.desc}
                   </p>
 
                   {/* Service List */}
-                  <ul className="flex flex-col gap-[10px] border-t border-white/10 pt-[14px]">
+                  <ul className="flex flex-col gap-[8px] border-t border-white/10 pt-[12px]">
                     {cat.services.map((s, idx) => (
-                      <li key={idx} className="flex items-center gap-[10px] text-[13.5px] text-white">
-                        <span className="text-[#FF4D9D] text-[10px]">✦</span> {s}
+                      <li key={idx} className="flex items-center gap-[12px] text-[14px] text-white/90">
+                        <span className="text-[#FF4D9D] text-[11px] mt-[1px]">✦</span> 
+                        <span>{s}</span>
                       </li>
                     ))}
                   </ul>

@@ -64,24 +64,24 @@ h1, h2, h3, h4, h5, h6, .font-playfair {
 
 /* Section Spacing */
 .section-premium {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 1024px) {
   .section-premium {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media (max-width: 768px) {
   .section-premium {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .mobile-hero-padding {
-    padding-top: 180px !important;
+    padding-top: 140px !important;
   }
 }
 

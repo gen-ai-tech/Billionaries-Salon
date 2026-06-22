@@ -31,7 +31,7 @@ export default function Booking() {
   };
 
   return (
-    <section id="booking" className="relative overflow-hidden bg-[#050505]" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
+    <section id="booking" className="relative overflow-hidden bg-[#050505]" style={{ paddingTop: '120px', paddingBottom: '40px' }}>
       {/* Background glow */}
       <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-[#FF4D9D] opacity-[0.03] blur-[150px] pointer-events-none"></div>
 

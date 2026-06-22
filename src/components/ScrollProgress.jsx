@@ -13,5 +13,19 @@ export default function ScrollProgress() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  return <div className="scroll-progress" style={{ width: `${progress}%` }} />;
+  return (
+    <div 
+      className="scroll-progress" 
+      style={{ 
+        width: `${progress}%`, 
+        position: 'fixed', 
+        top: 0, 
+        left: 0, 
+        height: '3px', 
+        background: 'linear-gradient(90deg, #FF4D9D, #E8B4B8)', 
+        zIndex: 9999,
+        transition: 'width 0.1s ease'
+      }} 
+    />
+  );
 }

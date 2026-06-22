@@ -13,7 +13,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden', background: '#050505' }}>
+    <section id="home" style={{ position: 'relative', minHeight: '100dvh', overflow: 'hidden', background: '#050505', display: 'flex', alignItems: 'center' }}>
       {/* Background Glows */}
       <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
         <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '40vw', height: '40vw', borderRadius: '50%', background: '#FF4D9D', opacity: 0.03, filter: 'blur(100px)' }}></div>
@@ -21,19 +21,19 @@ export default function Hero() {
       </div>
 
       <div className="container-premium" style={{ position: 'relative', zIndex: 10, width: '100%' }}>
-        <div className="mobile-hero-padding flex flex-col lg:flex-row items-center w-full min-h-screen pt-32 lg:pt-40 pb-16 lg:pb-32" style={{ gap: 'clamp(32px, 6vw, 80px)' }}>
+        <div className="mobile-hero-padding flex flex-col lg:flex-row items-center justify-between w-full min-h-[100dvh] lg:min-h-[auto] pt-24 lg:pt-0 pb-16 lg:pb-0" style={{ gap: 'clamp(32px, 6vw, 80px)' }}>
 
           {/* Left Content */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             {/* Badge */}
-            <div className={`luxury-badge ${visible ? 'animate-fade-up' : 'opacity-0'}`} style={{ display: 'inline-flex', width: 'fit-content' }}>
+            <div className={`luxury-badge ${visible ? 'animate-fade-up' : 'opacity-0'} max-w-full`} style={{ display: 'inline-flex', width: 'fit-content', whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>
               ✦ Salem's Premium Luxury Salon
             </div>
 
             {/* Heading */}
             <h1
               className={`${visible ? 'animate-fade-up delay-100' : 'opacity-0'}`}
-              style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, color: '#fff', lineHeight: 1.05, fontSize: 'clamp(36px, 5.5vw, 72px)', margin: 0, letterSpacing: '-0.03em' }}
+              style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, color: '#fff', lineHeight: 1.05, fontSize: 'clamp(32px, 8vw, 72px)', margin: 0, letterSpacing: '-0.03em', wordWrap: 'break-word' }}
             >
               Billionaires<br />
               <span className="text-gradient">Luxury Salon</span>

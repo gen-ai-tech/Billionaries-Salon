@@ -10,7 +10,7 @@ import Reviews from './components/Reviews';
 import Booking from './components/Booking';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import WhatsAppFloat from './components/WhatsAppFloat';
+import FloatingMenu from './components/FloatingMenu';
 
 export default function App() {
   return (
@@ -29,6 +29,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <FloatingMenu />
     </div>
   );
 }

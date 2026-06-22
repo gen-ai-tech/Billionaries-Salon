@@ -74,7 +74,7 @@ export default function Reviews() {
             <div
               key={i}
               style={{
-                minWidth: '360px',
+                minWidth: 'clamp(280px, 85vw, 360px)',
                 flexShrink: 0,
                 display: 'flex',
                 flexDirection: 'column',

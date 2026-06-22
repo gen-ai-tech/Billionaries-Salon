@@ -28,19 +28,19 @@ export default function About() {
             </div>
 
             {/* Experience Counter Overlay */}
-            <div className="absolute -bottom-8 right-0 sm:-right-8 lg:-right-12 glass-subtle p-8 rounded-2xl shadow-2xl border border-white/10 animate-float" style={{ animationDelay: '1s' }}>
-               <div className="flex items-center gap-6">
-                 <div className="font-playfair text-6xl lg:text-7xl font-bold text-gradient">10+</div>
+            <div className="absolute -bottom-6 right-2 sm:-right-6 lg:-right-12 glass-subtle p-6 lg:p-8 rounded-2xl shadow-2xl border border-white/10 animate-float" style={{ animationDelay: '1s' }}>
+               <div className="flex items-center gap-4 lg:gap-6">
+                 <div className="font-playfair text-5xl lg:text-7xl font-bold text-gradient">10+</div>
                  <div>
-                   <div className="text-white font-semibold text-lg">Years of</div>
-                   <div className="text-[#E8B4B8] tracking-widest uppercase text-sm">Excellence</div>
+                   <div className="text-white font-semibold text-base lg:text-lg">Years of</div>
+                   <div className="text-[#E8B4B8] tracking-widest uppercase text-xs lg:text-sm">Excellence</div>
                  </div>
                </div>
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col items-start gap-8">
+          <div className="flex flex-col items-start gap-6 lg:gap-8 mt-12 lg:mt-0">
             <div className={`${inView ? 'animate-fade-up delay-100' : 'opacity-0'}`}>
               <div className="luxury-badge mb-6">✦ Our Story</div>
               <h2 className="section-title">

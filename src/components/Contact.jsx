@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           
           {/* Map */}
-          <div className={`w-full h-[400px] lg:h-auto rounded-3xl overflow-hidden premium-card p-2 ${inView ? 'animate-fade-up delay-100' : 'opacity-0'}`}>
+          <div className={`w-full h-[300px] sm:h-[400px] lg:h-auto rounded-3xl overflow-hidden premium-card p-2 ${inView ? 'animate-fade-up delay-100' : 'opacity-0'}`}>
              <iframe
                 src={embedSrc}
                 width="100%" height="100%"
@@ -39,7 +39,7 @@ export default function Contact() {
           {/* Details */}
           <div className="flex flex-col gap-6">
             
-            <div className={`premium-card p-8 flex items-start gap-6 ${inView ? 'animate-fade-up delay-200' : 'opacity-0'}`}>
+            <div className={`premium-card p-6 lg:p-8 flex items-start gap-6 ${inView ? 'animate-fade-up delay-200' : 'opacity-0'}`}>
               <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#FF4D9D] shrink-0">
                 <MapPin size={24} strokeWidth={1.5} />
               </div>
@@ -49,7 +49,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className={`premium-card p-8 flex items-start gap-6 ${inView ? 'animate-fade-up delay-300' : 'opacity-0'}`}>
+            <div className={`premium-card p-6 lg:p-8 flex items-start gap-6 ${inView ? 'animate-fade-up delay-300' : 'opacity-0'}`}>
               <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#FF4D9D] shrink-0">
                 <Phone size={24} strokeWidth={1.5} />
               </div>
@@ -59,7 +59,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className={`premium-card p-8 flex items-start gap-6 ${inView ? 'animate-fade-up delay-400' : 'opacity-0'}`}>
+            <div className={`premium-card p-6 lg:p-8 flex items-start gap-6 ${inView ? 'animate-fade-up delay-400' : 'opacity-0'}`}>
               <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#FF4D9D] shrink-0">
                 <Clock size={24} strokeWidth={1.5} />
               </div>
