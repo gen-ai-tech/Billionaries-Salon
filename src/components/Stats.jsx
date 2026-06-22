@@ -14,7 +14,7 @@ export default function Stats() {
   const inView = useInView(ref);
 
   return (
-    <section className="bg-[#050505] pt-24 pb-16 lg:py-24 mt-4 lg:mt-0 border-t border-b border-white/5 relative z-20">
+    <section className="bg-[#050505] pt-20 pb-16 lg:py-24 border-t border-b border-white/5 relative z-20">
       <div className="container-premium">
         <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {statsData.map((stat, i) => (
