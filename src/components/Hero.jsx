@@ -13,7 +13,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-[100dvh] lg:min-h-screen overflow-hidden bg-[#050505] flex flex-col justify-center pt-28 pb-12 lg:py-0">
+    <section id="home" className="relative min-h-[100dvh] lg:min-h-screen overflow-hidden bg-[#050505] flex flex-col justify-center pt-36 pb-12 lg:py-0">
       {/* Background Glows */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-[#FF4D9D] opacity-5 blur-[100px]"></div>

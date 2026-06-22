@@ -14,17 +14,17 @@ export default function Stats() {
   const inView = useInView(ref);
 
   return (
-    <section className="bg-[#050505] pt-20 pb-16 lg:py-24 border-t border-b border-white/5 relative z-20">
+    <section className="bg-[#050505] py-16 lg:py-24 border-t border-b border-white/5 relative z-20">
       <div className="container-premium">
         <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {statsData.map((stat, i) => (
-            <div 
-              key={i} 
+            <div
+              key={i}
               className={`premium-card p-3 sm:p-4 lg:p-8 flex flex-col items-center justify-center text-center animate-fade-up`}
-              style={{ 
-                opacity: inView ? 1 : 0, 
+              style={{
+                opacity: inView ? 1 : 0,
                 animationDelay: `${i * 0.15}s`,
-                animationPlayState: inView ? 'running' : 'paused' 
+                animationPlayState: inView ? 'running' : 'paused'
               }}
             >
               <div className="mb-4 text-[#FF4D9D]">
