@@ -79,7 +79,7 @@ export default function Services() {
           {serviceCategories.map((cat, i) => (
             <div
               key={cat.id}
-              className={`relative flex flex-col h-full min-h-[380px] md:min-h-[420px] w-full rounded-[24px] bg-[#0d0d0d] border border-white/5 overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(255,77,157,0.12)] hover:border-[#FF4D9D]/30 ${inView ? 'animate-fade-up' : 'opacity-0'}`}
+              className={`relative flex flex-col w-full h-[100px] md:h-auto md:min-h-[420px] rounded-[16px] md:rounded-[24px] bg-[#0d0d0d] border border-white/5 overflow-hidden group transition-all duration-500 md:hover:-translate-y-2 md:hover:shadow-[0_12px_40px_rgba(255,77,157,0.12)] md:hover:border-[#FF4D9D]/30 ${inView ? 'animate-fade-up' : 'opacity-0'}`}
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               {/* Background Image */}
@@ -87,26 +87,27 @@ export default function Services() {
                 <img
                   src={cat.img}
                   alt={cat.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/70 to-transparent opacity-70 group-hover:opacity-95 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-black/50 md:bg-transparent z-0"></div>
+                <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/70 to-transparent opacity-70 group-hover:opacity-95 transition-opacity duration-500"></div>
               </div>
 
               {/* Flexbox Container for ALL Content (Enforces Padding and Alignment) */}
-              <div className="relative z-10 flex flex-col justify-end w-full h-full p-6 lg:p-8">
+              <div className="relative z-10 flex flex-col justify-center md:justify-end w-full h-full p-6 lg:p-8">
 
                 {/* Default State: Always visible at bottom-left */}
-                <div className="absolute bottom-6 lg:bottom-8 left-6 lg:left-8 right-6 lg:right-8 flex items-center gap-4 transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-4">
-                  <div className="w-12 h-12 rounded-[12px] bg-[#111] border border-white/10 flex items-center justify-center text-[#FF4D9D] shadow-lg shrink-0">
+                <div className="md:absolute md:bottom-6 lg:bottom-8 md:left-6 lg:left-8 md:right-6 lg:right-8 flex items-center gap-4 transition-all duration-500 md:group-hover:opacity-0 md:group-hover:-translate-y-4">
+                  <div className="hidden md:flex w-12 h-12 rounded-[12px] bg-[#111] border border-white/10 items-center justify-center text-[#FF4D9D] shadow-lg shrink-0">
                     <cat.Icon size={22} strokeWidth={1.5} />
                   </div>
-                  <h3 className="font-playfair text-[22px] font-bold text-white tracking-wide leading-tight">
+                  <h3 className="font-sans md:font-playfair text-[22px] font-bold text-white tracking-wide leading-tight">
                     {cat.title}
                   </h3>
                 </div>
 
                 {/* Hover Content: Slides up */}
-                <div className="flex flex-col gap-[14px] w-full opacity-0 translate-y-8 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500">
+                <div className="hidden md:flex flex-col gap-[14px] w-full opacity-0 translate-y-8 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500">
 
                   {/* Icon & Title */}
                   <div className="flex items-center gap-4">
