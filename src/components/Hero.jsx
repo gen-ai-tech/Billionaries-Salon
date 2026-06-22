@@ -13,62 +13,50 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" style={{ position: 'relative', minHeight: '100dvh', overflowX: 'hidden', background: '#050505', display: 'flex', flexDirection: 'column' }}>
+    <section id="home" className="relative min-h-[100dvh] lg:min-h-screen overflow-hidden bg-[#050505] flex flex-col justify-center pt-28 pb-12 lg:py-0">
       {/* Background Glows */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-        <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '40vw', height: '40vw', borderRadius: '50%', background: '#FF4D9D', opacity: 0.03, filter: 'blur(100px)' }}></div>
-        <div style={{ position: 'absolute', bottom: '-10%', right: '-10%', width: '50vw', height: '50vw', borderRadius: '50%', background: '#E8B4B8', opacity: 0.02, filter: 'blur(120px)' }}></div>
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-[#FF4D9D] opacity-5 blur-[100px]"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#E8B4B8] opacity-5 blur-[120px]"></div>
       </div>
 
-      <div className="container-premium flex flex-grow items-center" style={{ position: 'relative', zIndex: 10, width: '100%' }}>
-        <div className="mobile-hero-padding flex flex-col lg:flex-row items-center justify-center lg:justify-between w-full py-24 lg:py-0" style={{ gap: 'clamp(32px, 6vw, 80px)' }}>
+      <div className="container-premium relative z-10 w-full flex-grow flex flex-col justify-center">
+        <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10 lg:gap-16">
 
           {/* Left Content */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          <div className="flex flex-col gap-6 w-full lg:w-1/2 text-center lg:text-left items-center lg:items-start">
             {/* Badge */}
-            <div className={`luxury-badge ${visible ? 'animate-fade-up' : 'opacity-0'} max-w-full`} style={{ display: 'inline-flex', width: 'fit-content', whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>
+            <div className={`luxury-badge ${visible ? 'animate-fade-up' : 'opacity-0'} max-w-full whitespace-nowrap overflow-hidden text-ellipsis`}>
               ✦ Salem's Premium Luxury Salon
             </div>
 
             {/* Heading */}
             <h1
-              className={`${visible ? 'animate-fade-up delay-100' : 'opacity-0'}`}
-              style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, color: '#fff', lineHeight: 1.05, fontSize: 'clamp(32px, 8vw, 72px)', margin: 0, letterSpacing: '-0.03em', wordWrap: 'break-word' }}
+              className={`${visible ? 'animate-fade-up delay-100' : 'opacity-0'} font-bold text-white leading-[1.05] tracking-tight`}
+              style={{ fontSize: 'clamp(44px, 10vw, 72px)', fontFamily: "'DM Sans', sans-serif" }}
             >
               Billionaires<br />
               <span className="text-gradient">Luxury Salon</span>
             </h1>
 
             {/* Tagline */}
-            <div className={`${visible ? 'animate-fade-up delay-200' : 'opacity-0'}`} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 'clamp(16px, 2vw, 20px)', color: '#E8B4B8', margin: 0, fontWeight: 400 }}>
+            <div className={`flex flex-col gap-3 ${visible ? 'animate-fade-up delay-200' : 'opacity-0'}`}>
+              <p className="font-sans text-[#E8B4B8] font-medium m-0" style={{ fontSize: 'clamp(16px, 3vw, 20px)' }}>
                 "Where Beauty Meets Absolute Elegance"
               </p>
-              <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 'clamp(14px, 1.5vw, 18px)', lineHeight: 1.7, maxWidth: '480px', margin: 0 }}>
+              <p className="text-white/70 leading-relaxed max-w-[480px] m-0 mx-auto lg:mx-0" style={{ fontSize: 'clamp(15px, 2vw, 18px)' }}>
                 Experience world-class beauty transformations. Precision styling, premium products, and an atmosphere crafted for royalty.
               </p>
             </div>
-
-
           </div>
 
           {/* Right: Salon Image */}
-          <div className={`${visible ? 'animate-fade-up delay-300' : 'opacity-0'}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
-            <div style={{
-              position: 'relative',
-              width: '100%',
-              maxWidth: 'clamp(280px, 35vw, 420px)',
-              aspectRatio: '3/4',
-              borderRadius: '28px',
-              overflow: 'hidden',
-              border: '1px solid rgba(255,255,255,0.1)',
-              boxShadow: '0 24px 80px rgba(0,0,0,0.5)',
-              margin: '0 auto',
-            }}>
+          <div className={`w-full lg:w-1/2 flex items-center justify-center ${visible ? 'animate-fade-up delay-300' : 'opacity-0'}`}>
+            <div className="relative w-full max-w-[340px] sm:max-w-[400px] lg:max-w-[450px] aspect-[4/5] rounded-[32px] overflow-hidden border border-white/10 shadow-[0_24px_80px_rgba(0,0,0,0.5)] mx-auto mt-4 lg:mt-0">
               <img
                 src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop"
                 alt="Billionaires Luxury Salon Interior"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
+                className="w-full h-full object-cover object-center block"
               />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 50%, transparent 100%)' }}></div>
               {/* Bottom label on image */}
