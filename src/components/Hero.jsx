@@ -13,15 +13,15 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" style={{ position: 'relative', minHeight: '100dvh', overflow: 'hidden', background: '#050505', display: 'flex', alignItems: 'center' }}>
+    <section id="home" style={{ position: 'relative', minHeight: '100dvh', overflowX: 'hidden', background: '#050505', display: 'flex', flexDirection: 'column' }}>
       {/* Background Glows */}
-      <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
         <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '40vw', height: '40vw', borderRadius: '50%', background: '#FF4D9D', opacity: 0.03, filter: 'blur(100px)' }}></div>
         <div style={{ position: 'absolute', bottom: '-10%', right: '-10%', width: '50vw', height: '50vw', borderRadius: '50%', background: '#E8B4B8', opacity: 0.02, filter: 'blur(120px)' }}></div>
       </div>
 
-      <div className="container-premium" style={{ position: 'relative', zIndex: 10, width: '100%' }}>
-        <div className="mobile-hero-padding flex flex-col lg:flex-row items-center justify-between w-full min-h-[100dvh] lg:min-h-[auto] pt-24 lg:pt-0 pb-16 lg:pb-0" style={{ gap: 'clamp(32px, 6vw, 80px)' }}>
+      <div className="container-premium flex flex-grow items-center" style={{ position: 'relative', zIndex: 10, width: '100%' }}>
+        <div className="mobile-hero-padding flex flex-col lg:flex-row items-center justify-center lg:justify-between w-full py-24 lg:py-0" style={{ gap: 'clamp(32px, 6vw, 80px)' }}>
 
           {/* Left Content */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
