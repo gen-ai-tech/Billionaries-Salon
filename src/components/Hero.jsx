@@ -13,14 +13,14 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-[100dvh] lg:min-h-screen overflow-hidden bg-[#050505] flex flex-col justify-center pt-36 pb-12 lg:py-0">
+    <section id="home" className="relative min-h-[100dvh] lg:min-h-screen overflow-hidden bg-[#050505] flex flex-col justify-center pt-48 pb-12 lg:py-0">
       {/* Background Glows */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-[#FF4D9D] opacity-5 blur-[100px]"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#E8B4B8] opacity-5 blur-[120px]"></div>
       </div>
 
-      <div className="container-premium relative z-10 w-full flex-grow flex flex-col justify-center">
+      <div className="container-premium relative z-10 w-full flex-grow flex flex-col justify-center mt-20 lg:mt-0">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10 lg:gap-16">
 
           {/* Left Content */}
