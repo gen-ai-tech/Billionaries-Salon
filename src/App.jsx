@@ -15,7 +15,6 @@ import FloatingMenu from './components/FloatingMenu';
 export default function App() {
   return (
     <div style={{ background: '#000', minHeight: '100vh', overflowX: 'hidden' }}>
-      <ScrollProgress />
       <Navbar />
       <main>
         <Hero />
