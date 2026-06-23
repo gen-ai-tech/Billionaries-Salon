@@ -54,8 +54,8 @@ export default function Hero() {
           </div>
 
           {/* Right: Salon Image */}
-          <div className={`w-full lg:w-1/2 flex items-center justify-center ${visible ? 'animate-fade-up delay-300' : 'opacity-0'}`}>
-            <div className="relative w-full max-w-[340px] sm:max-w-[400px] lg:max-w-[450px] aspect-[4/5] rounded-[32px] overflow-hidden border border-white/10 shadow-[0_24px_80px_rgba(0,0,0,0.5)] mx-auto mt-4 lg:mt-0">
+          <div className={`w-full lg:w-1/2 flex items-center justify-center mt-6 mb-16 lg:mt-0 lg:mb-0 ${visible ? 'animate-fade-up delay-300' : 'opacity-0'}`}>
+            <div className="relative w-full max-w-[340px] sm:max-w-[400px] lg:max-w-[450px] aspect-[4/5] rounded-[32px] overflow-hidden border border-white/10 shadow-[0_24px_80px_rgba(0,0,0,0.5)] mx-auto">
               <img
                 src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop"
                 alt="Billionaires Luxury Salon Interior"
