@@ -15,7 +15,7 @@ export default function Contact() {
         
         <div ref={ref} className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <div className={`${inView ? 'animate-fade-up' : 'opacity-0'}`}>
-            <div className="luxury-badge mb-6">✦ Contact Us</div>
+            <div className="luxury-badge">✦ Contact Us</div>
             <h2 className="section-title">
               Visit Our <span className="text-gradient">Sanctuary</span>
             </h2>

@@ -42,7 +42,7 @@ export default function Navbar() {
           padding: scrolled ? '12px 0' : '16px 0',
         }}
       >
-        <div className="container-premium" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 'clamp(24px, 5vw, 80px)', paddingRight: 'clamp(24px, 5vw, 80px)' }}>
 
           {/* Logo: "B" mark + wordmark */}
           <a
@@ -86,54 +86,59 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Desktop Nav Links */}
-          <div className="hidden md:flex items-center" style={{ gap: 'clamp(20px, 3vw, 36px)', marginLeft: 'clamp(24px, 5vw, 80px)' }}>
-            {navLinks.map(link => (
-              <button
-                key={link.href}
-                onClick={() => handleLink(link.href)}
-                style={{
-                  color: 'rgba(255,255,255,0.8)',
-                  fontSize: '14px',
-                  fontWeight: 500,
-                  fontFamily: "'DM Sans', sans-serif",
-                  letterSpacing: '0.02em',
-                  background: 'transparent',
-                  border: 'none',
-                  cursor: 'pointer',
-                  padding: '4px 0',
-                  position: 'relative',
-                  transition: 'color 0.3s ease',
-                  whiteSpace: 'nowrap',
-                }}
-                onMouseEnter={e => e.currentTarget.style.color = '#fff'}
-                onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
-              >
-                {link.label}
-                <span style={{
-                  position: 'absolute',
-                  bottom: '-2px',
-                  left: 0,
-                  width: '0%',
-                  height: '2px',
-                  background: 'linear-gradient(90deg, #FF4D9D, #E8B4B8)',
-                  borderRadius: '2px',
-                  transition: 'width 0.3s ease',
-                }}
-                  className="nav-underline"
-                />
-              </button>
-            ))}
-          </div>
+          {/* Desktop Right Group (Links + CTA) */}
+          <div className="hidden md:flex items-center" style={{ gap: 'clamp(24px, 3vw, 40px)' }}>
+            
+            {/* Nav Links */}
+            <div className="flex items-center" style={{ gap: 'clamp(20px, 3vw, 36px)' }}>
+              {navLinks.map(link => (
+                <button
+                  key={link.href}
+                  onClick={() => handleLink(link.href)}
+                  style={{
+                    color: 'rgba(255,255,255,0.8)',
+                    fontSize: '14px',
+                    fontWeight: 500,
+                    fontFamily: "'DM Sans', sans-serif",
+                    letterSpacing: '0.02em',
+                    background: 'transparent',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: '4px 0',
+                    position: 'relative',
+                    transition: 'color 0.3s ease',
+                    whiteSpace: 'nowrap',
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.color = '#fff'}
+                  onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
+                >
+                  {link.label}
+                  <span style={{
+                    position: 'absolute',
+                    bottom: '-2px',
+                    left: 0,
+                    width: '0%',
+                    height: '2px',
+                    background: 'linear-gradient(90deg, #FF4D9D, #E8B4B8)',
+                    borderRadius: '2px',
+                    transition: 'width 0.3s ease',
+                  }}
+                    className="nav-underline"
+                  />
+                </button>
+              ))}
+            </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:inline-flex" style={{ flexShrink: 0 }}>
-            <button
-              onClick={() => handleLink('#booking')}
-              className="btn-premium"
-            >
-              Book Appointment
-            </button>
+            {/* CTA Button */}
+            <div style={{ flexShrink: 0 }}>
+              <button
+                onClick={() => handleLink('#booking')}
+                className="btn-premium"
+              >
+                Book Appointment
+              </button>
+            </div>
+            
           </div>
 
           {/* Mobile Hamburger */}

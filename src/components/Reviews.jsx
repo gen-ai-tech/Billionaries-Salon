@@ -45,8 +45,8 @@ export default function Reviews() {
         {/* Header */}
         <div ref={ref} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', marginBottom: '64px', width: '100%' }}>
           <div className={`${inView ? 'animate-fade-up' : 'opacity-0'}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '700px', margin: '0 auto' }}>
-            <div className="luxury-badge" style={{ marginBottom: '24px' }}>✦ Testimonials</div>
-            <h2 className="font-playfair" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 700, lineHeight: 1.2, color: '#fff', marginBottom: '16px', textAlign: 'center' }}>
+            <div className="luxury-badge" style={{ marginBottom: '4px' }}>✦ Testimonials</div>
+            <h2 className="font-playfair" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 700, lineHeight: 1.2, color: '#fff', marginBottom: '8px', textAlign: 'center' }}>
               Loved by Salem's <span className="text-gradient">Elite</span>
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.6, maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>

@@ -69,8 +69,8 @@ export default function Services() {
         {/* Header */}
         <div ref={ref} className="w-full flex flex-col items-center justify-center mb-12 lg:mb-16 text-center">
           <div className={`${inView ? 'animate-fade-up' : 'opacity-0'} flex flex-col items-center justify-center w-full`}>
-            <div className="luxury-badge mb-6">✦ Our Services</div>
-            <h2 className="font-playfair" style={{ fontWeight: 800, fontSize: 'clamp(32px, 4vw, 42px)', color: '#fff', lineHeight: 1.1, marginBottom: '24px', letterSpacing: '-0.02em' }}>
+            <div className="luxury-badge">✦ Our Services</div>
+            <h2 className="font-playfair" style={{ fontWeight: 800, fontSize: 'clamp(32px, 4vw, 42px)', color: '#fff', lineHeight: 1.1, marginBottom: '8px', letterSpacing: '-0.02em' }}>
               The Art of <span className="text-gradient">Perfection</span>
             </h2>
             <p className="text-white/70 text-center mx-auto max-w-[700px] text-lg leading-relaxed">

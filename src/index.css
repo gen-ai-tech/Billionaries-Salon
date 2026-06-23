@@ -200,6 +200,7 @@ h1, h2, h3, h4, h5, h6, .font-playfair {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-family: 'DM Sans', sans-serif;
+  margin-bottom: 16px;
 }
 
 /* Animations */

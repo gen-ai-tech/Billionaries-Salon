@@ -41,10 +41,10 @@ export default function Booking() {
         {/* Header */}
         <div ref={ref} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', marginBottom: '48px' }}>
           <div className={`${inView ? 'animate-fade-up' : 'opacity-0'}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '700px', margin: '0 auto' }}>
-            <div className="luxury-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: '24px' }}>
+            <div className="luxury-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
               <Sparkles size={16} /> Book Appointment
             </div>
-            <h2 className="font-playfair" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 700, lineHeight: 1.2, color: '#fff', marginBottom: '16px', textAlign: 'center' }}>
+            <h2 className="font-playfair" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 700, lineHeight: 1.2, color: '#fff', marginBottom: '8px', textAlign: 'center' }}>
               Book Your <span className="text-gradient">Experience</span>
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.6, maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>

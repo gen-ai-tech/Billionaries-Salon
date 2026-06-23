@@ -42,7 +42,7 @@ export default function About() {
           {/* Right Content */}
           <div className="flex flex-col items-start gap-6 lg:gap-8 mt-12 lg:mt-0">
             <div className={`${inView ? 'animate-fade-up delay-100' : 'opacity-0'}`}>
-              <div className="luxury-badge mb-6">✦ Our Story</div>
+              <div className="luxury-badge">✦ Our Story</div>
               <h2 className="section-title">
                 Redefining Luxury Beauty in <span className="text-gradient">Salem</span>
               </h2>

@@ -22,7 +22,7 @@ export default function WhyUs() {
           {/* Left Content */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             <div className={`${inView ? 'animate-fade-up' : 'opacity-0'}`}>
-              <div className="luxury-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
+              <div className="luxury-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
                 <Sparkles size={14} /> The Billionaires Difference
               </div>
               <h2 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, fontSize: 'clamp(28px, 4vw, 52px)', lineHeight: 1.1, letterSpacing: '-0.03em', color: '#fff', margin: 0 }}>

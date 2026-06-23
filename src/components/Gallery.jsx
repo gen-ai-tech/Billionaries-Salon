@@ -27,8 +27,8 @@ export default function Gallery() {
         {/* Header */}
         <div ref={ref} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', marginBottom: '56px', width: '100%' }}>
           <div className={`${inView ? 'animate-fade-up' : 'opacity-0'}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '700px', margin: '0 auto' }}>
-            <div className="luxury-badge" style={{ marginBottom: '20px' }}>✦ Portfolio</div>
-            <h2 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, textAlign: 'center', color: '#fff', fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '16px' }}>
+            <div className="luxury-badge" style={{ marginBottom: '4px' }}>✦ Portfolio</div>
+            <h2 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, textAlign: 'center', color: '#fff', fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '8px' }}>
               Our Masterpieces of <span className="text-gradient">Beauty</span>
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', textAlign: 'center', maxWidth: '600px', margin: '0 auto', fontSize: 'clamp(15px, 1.5vw, 18px)', lineHeight: 1.65 }}>
