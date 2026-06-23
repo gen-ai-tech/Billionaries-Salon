@@ -64,7 +64,7 @@ export default function Services() {
 
   return (
     <section id="services" className="section-premium bg-[#050505] relative overflow-hidden">
-      <div className="container-premium relative z-10 mx-auto max-w-[1400px]">
+      <div className="container-premium relative z-10 mx-auto px-6 sm:px-10 lg:px-16" style={{ maxWidth: '1280px' }}>
 
         {/* Header */}
         <div ref={ref} className="w-full flex flex-col items-center justify-center mb-12 lg:mb-16 text-center">
