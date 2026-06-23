@@ -16,7 +16,7 @@ export default function Hero() {
     <section id="home" className="relative min-h-[100dvh] lg:min-h-screen overflow-hidden bg-[#050505] flex flex-col justify-start lg:justify-center pt-8 lg:pt-0 pb-12 lg:py-0">
       {/* Mobile Top Spacer to avoid header overlap */}
       <div className="block lg:hidden w-full flex-shrink-0" style={{ height: '110px' }}></div>
-      
+
       {/* Background Glows */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-[#FF4D9D] opacity-5 blur-[100px]"></div>
