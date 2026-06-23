@@ -6,7 +6,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#050505] pt-24 pb-32 md:pb-8 border-t border-white/5 relative overflow-hidden">
+    <footer className="bg-[#050505] pt-24 pb-40 md:pb-8 border-t border-white/5 relative overflow-hidden">
       <div className="absolute bottom-0 left-[50%] translate-x-[-50%] w-[800px] h-[400px] rounded-t-full bg-[#FF4D9D] opacity-[0.02] blur-[150px] pointer-events-none"></div>
       
       <div className="container-premium relative z-10">
