@@ -14,7 +14,7 @@ import FloatingMenu from './components/FloatingMenu';
 
 export default function App() {
   return (
-    <div style={{ background: '#000', minHeight: '100vh', overflowX: 'hidden' }}>
+    <div style={{ background: '#000', minHeight: '100vh', overflowX: 'hidden' }} className="pb-[calc(65px+env(safe-area-inset-bottom))] md:pb-0">
       <Navbar />
       <main>
         <Hero />

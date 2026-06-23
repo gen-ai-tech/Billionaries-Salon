@@ -102,7 +102,7 @@ export default function Services() {
               </div>
 
               {/* Flexbox Container for ALL Content (Enforces Padding and Alignment) */}
-              <div className="relative z-10 flex flex-col justify-center md:justify-end w-full h-full p-6 lg:p-8">
+              <div className="relative z-10 flex flex-col justify-center md:justify-end w-full h-full p-6 pl-10 md:pl-6 lg:p-8">
 
                 {/* Default State: Always visible at bottom-left */}
                 <div className={`md:absolute md:bottom-6 lg:bottom-8 md:left-6 lg:left-8 md:right-6 lg:right-8 flex items-center gap-4 transition-all duration-500 md:group-hover:opacity-0 md:group-hover:-translate-y-4 ${isActive ? 'hidden md:flex' : 'flex'}`}>

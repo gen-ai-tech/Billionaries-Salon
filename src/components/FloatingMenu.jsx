@@ -68,35 +68,39 @@ export default function FloatingMenu() {
 
       {/* MOBILE: Fixed Bottom Navigation Bar */}
       <div 
-        className="md:hidden fixed bottom-0 left-0 right-0 z-[999] bg-[#050505] border-t border-[#ff4fa3]/10 px-3 pt-3 shadow-[0_-12px_40px_rgba(0,0,0,0.8)]"
-        style={{ paddingBottom: 'calc(12px + env(safe-area-inset-bottom))' }}
+        className="md:hidden fixed bottom-0 left-0 w-full z-[9999] backdrop-blur-[12px] flex flex-col justify-center overflow-hidden"
+        style={{ 
+          backgroundColor: 'rgba(10, 10, 10, 0.85)',
+          borderTop: '1px solid rgba(255, 0, 128, 0.3)',
+          paddingBottom: 'env(safe-area-inset-bottom)',
+        }}
       >
-        <div className="flex items-center justify-between gap-3 max-w-md mx-auto">
+        <div className="flex items-center justify-between gap-2 px-2 sm:px-4 w-full h-[65px]">
           {/* Book Appointment */}
           <button
             onClick={() => handleScroll('#booking')}
-            className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#0a0a0a] text-[#ff4fa3] border border-[#ff4fa3]/20 font-semibold text-[14px] tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(255,79,163,0.3)] hover:border-[#ff4fa3]/50 active:scale-95"
+            className="flex-1 h-[42px] flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-[#FF4D9D]/40 bg-transparent text-[#FF4D9D] font-medium text-[13px] sm:text-[14px] tracking-wide transition-all active:bg-[#FF4D9D]/10"
           >
-            <Calendar size={18} strokeWidth={2.5} />
-            <span>Book</span>
+            <Calendar size={16} strokeWidth={2} />
+            <span className="truncate mt-[1px]">Book</span>
           </button>
 
           {/* Location */}
           <button
             onClick={() => handleScroll('#contact')}
-            className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#0a0a0a] text-[#ff4fa3] border border-[#ff4fa3]/20 font-semibold text-[14px] tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(255,79,163,0.3)] hover:border-[#ff4fa3]/50 active:scale-95"
+            className="flex-1 h-[42px] flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-[#FF4D9D]/40 bg-transparent text-[#FF4D9D] font-medium text-[13px] sm:text-[14px] tracking-wide transition-all active:bg-[#FF4D9D]/10"
           >
-            <MapPin size={18} strokeWidth={2.5} />
-            <span>Location</span>
+            <MapPin size={16} strokeWidth={2} />
+            <span className="truncate mt-[1px]">Location</span>
           </button>
 
           {/* Call */}
           <a
             href="tel:+916385729991"
-            className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#0a0a0a] text-[#ff4fa3] border border-[#ff4fa3]/20 font-semibold text-[14px] tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(255,79,163,0.3)] hover:border-[#ff4fa3]/50 active:scale-95 no-underline"
+            className="flex-1 h-[42px] flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-[#FF4D9D]/40 bg-transparent text-[#FF4D9D] font-medium text-[13px] sm:text-[14px] tracking-wide transition-all active:bg-[#FF4D9D]/10 no-underline"
           >
-            <Phone size={18} strokeWidth={2.5} />
-            <span>Call</span>
+            <Phone size={16} strokeWidth={2} />
+            <span className="truncate mt-[1px]">Call</span>
           </a>
         </div>
       </div>
