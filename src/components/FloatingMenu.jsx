@@ -75,7 +75,7 @@ export default function FloatingMenu() {
           paddingBottom: 'env(safe-area-inset-bottom)',
         }}
       >
-        <div className="flex items-center justify-between gap-2 px-2 sm:px-4 w-full h-[65px]">
+        <div className="flex items-center justify-between gap-3 px-4 sm:px-6 w-full h-[65px]">
           {/* Book Appointment */}
           <button
             onClick={() => handleScroll('#booking')}
