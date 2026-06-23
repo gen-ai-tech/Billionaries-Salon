@@ -69,15 +69,15 @@ export default function FloatingMenu() {
         className="md:hidden fixed bottom-0 left-0 w-full z-[9999] backdrop-blur-[12px] flex flex-col justify-center overflow-hidden"
         style={{
           backgroundColor: 'rgba(10, 10, 10, 0.85)',
-          borderTop: '1px solid rgba(255, 0, 128, 0.3)',
           paddingBottom: 'env(safe-area-inset-bottom)',
         }}
       >
-        <div className="flex items-center justify-between gap-3 px-4 sm:px-6 w-full h-[65px]">
+        <div className="flex items-center justify-between gap-3 w-full h-[65px]" style={{ paddingLeft: '16px', paddingRight: '16px' }}>
           {/* Book Appointment */}
           <button
             onClick={() => handleScroll('#booking')}
             className="flex-1 h-[42px] flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-[#FF4D9D]/40 bg-transparent text-[#FF4D9D] font-medium text-[13px] sm:text-[14px] tracking-wide transition-all active:bg-[#FF4D9D]/10"
+            style={{ marginLeft: '6px' }}
           >
             <Calendar size={16} strokeWidth={2} />
             <span className="truncate mt-[1px]">Book</span>
@@ -96,6 +96,7 @@ export default function FloatingMenu() {
           <a
             href="tel:+916385729991"
             className="flex-1 h-[42px] flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-[#FF4D9D]/40 bg-transparent text-[#FF4D9D] font-medium text-[13px] sm:text-[14px] tracking-wide transition-all active:bg-[#FF4D9D]/10 no-underline"
+            style={{ marginRight: '6px' }}
           >
             <Phone size={16} strokeWidth={2} />
             <span className="truncate mt-[1px]">Call</span>

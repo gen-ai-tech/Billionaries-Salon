@@ -22,7 +22,7 @@ export default function WhyUs() {
           {/* Left Content */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             <div className={`${inView ? 'animate-fade-up' : 'opacity-0'}`}>
-              <div className="luxury-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+              <div className="luxury-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                 <Sparkles size={14} /> The Billionaires Difference
               </div>
               <h2 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, fontSize: 'clamp(28px, 4vw, 52px)', lineHeight: 1.1, letterSpacing: '-0.03em', color: '#fff', margin: 0 }}>
@@ -36,18 +36,18 @@ export default function WhyUs() {
               We don't just offer beauty services; we provide an elite experience. Our commitment to excellence is reflected in every detail, from our plush interiors to our bespoke treatments.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginTop: '8px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '8px' }}>
               {features.map((f, i) => (
                 <div
                   key={i}
                   className={`premium-card ${inView ? 'animate-fade-up' : 'opacity-0'}`}
-                  style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', animationDelay: `${i * 0.1 + 0.2}s` }}
+                  style={{ padding: '16px 20px', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '16px', animationDelay: `${i * 0.1 + 0.2}s` }}
                 >
-                  <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.75)' }}>
+                  <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.75)', flexShrink: 0 }}>
                     <f.Icon size={20} strokeWidth={1.5} />
                   </div>
-                  <div>
-                    <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: '16px', color: '#fff', marginBottom: '6px' }}>{f.title}</h4>
+                  <div style={{ flex: 1 }}>
+                    <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: '15px', color: '#fff', marginBottom: '4px' }}>{f.title}</h4>
                     <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '13px', lineHeight: 1.6, margin: 0 }}>{f.desc}</p>
                   </div>
                 </div>
