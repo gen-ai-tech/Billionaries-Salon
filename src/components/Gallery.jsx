@@ -56,7 +56,7 @@ export default function Gallery() {
               {/* Image — no zoom on hover */}
               <img
                 src={item.img}
-                alt={item.label}
+                alt={`${item.label} Portfolio - Billionaires Luxury Salon Salem`}
                 style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
               />
 

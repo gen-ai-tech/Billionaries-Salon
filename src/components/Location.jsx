@@ -8,7 +8,7 @@ export default function Location() {
   const address = '1st+Floor,+Ananthammal+Complex,+No+297,+2%2F4,+Angammal+Colony,+Salem,+Tamil+Nadu+636009';
   const mapsLink = `https://www.google.com/maps/search/?api=1&query=${address}`;
   const directionsLink = `https://www.google.com/maps/dir/?api=1&destination=${address}`;
-  const embedSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.7!2d78.1460!3d11.6643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBillionaires+Luxury+Salon+Salem!5e0!3m2!1sen!2sin!4v1700000000000`;
+  const embedSrc = `https://maps.google.com/maps?q=Billionaires%20Luxury%20Salon,%201st%20Floor,%20Ananthammal%20Complex,%20Salem&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <section id="location" className="section" style={{

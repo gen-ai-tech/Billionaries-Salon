@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="relative w-full max-w-[340px] sm:max-w-[400px] lg:max-w-[450px] aspect-[4/5] rounded-[32px] overflow-hidden border border-white/10 shadow-[0_24px_80px_rgba(0,0,0,0.5)] mx-auto">
               <img
                 src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop"
-                alt="Billionaires Luxury Salon Interior"
+                alt="Billionaires Premium Luxury Salon Interior in Salem - Best Beauty Parlour Experience"
                 className="w-full h-full object-cover object-center block"
               />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 50%, transparent 100%)' }}></div>

@@ -90,7 +90,7 @@ export default function Footer() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </div>
                 <span className="text-white/60 text-[15px] leading-relaxed">
-                  1st Floor, Ananthammal Complex,<br/>Salem, TN 636009
+                  1st Floor, Ananthammal Complex,<br/>No 297, 2/4, Angammal Colony,<br/>Salem, TN 636009
                 </span>
               </li>
               <li className="flex items-start gap-4">

@@ -19,7 +19,7 @@ export default function About() {
             <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden premium-card">
               <img 
                 src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1974&auto=format&fit=crop" 
-                alt="Luxury Salon Treatment"
+                alt="Premium Hair and Skin Treatment at Billionaires Salon Salem"
                 className="w-full h-full object-cover object-center"
               />
 

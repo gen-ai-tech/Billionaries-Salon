@@ -95,7 +95,7 @@ export default function Services() {
               <div className="absolute inset-0 w-full h-full z-0 bg-[#0a0a0a]">
                 <img
                   src={cat.img}
-                  alt={cat.title}
+                  alt={`${cat.title} at Billionaires Luxury Salon Salem`}
                   className={`w-full h-full object-cover transition-all duration-700 md:group-hover:scale-110 ${isActive ? 'opacity-20 md:opacity-100' : 'opacity-50 md:opacity-100'}`}
                 />
                 <div className={`${isActive ? 'block' : 'hidden'} md:block absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent opacity-90 md:opacity-70 md:group-hover:opacity-95 transition-opacity duration-500`}></div>
